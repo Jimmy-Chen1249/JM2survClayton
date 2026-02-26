@@ -1,0 +1,27 @@
+Package: JM2survClayton
+Type: Package
+Title: Joint Modeling of a Longitudinal Outcome and Two Correlated Survival Endpoints via Clayton Copula
+Version: 0.1.0
+Authors@R: 
+    person(given = "Jiming",
+           family = "Chen",
+           email = "c_jiming@126.com",
+           role = c("aut", "cre"))
+Description: Implements EM-based joint models linking a longitudinal outcome with two correlated time-to-event endpoints through shared random effects. The dependence between survival endpoints is modeled using a Clayton survival copula. The package supports Gaussian and Poisson longitudinal submodels and accommodates one- or two-dimensional random effects. Example datasets are shipped with the package.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Imports:
+    survival,
+    lme4,
+    MASS,
+    mvtnorm,
+    mnormt,
+    rootSolve,
+    randtoolbox,
+    Rcpp
+LinkingTo:
+    Rcpp,
+    RcppArmadillo
+SystemRequirements: C++17
